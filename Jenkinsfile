@@ -1,5 +1,8 @@
 pipeline {
     agent any
+     tools {
+        maven 'Maven1' // Ensure Maven is installed on Jenkins; update version as needed
+    }
     stages {
         stage('Checkout') {
             steps {
